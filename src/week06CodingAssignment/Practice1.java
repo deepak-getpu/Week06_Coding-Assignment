@@ -1,27 +1,27 @@
 package week06CodingAssignment;
 
-public class ACards {
+public class Practice1 {
 	
 	String name;
 	String suit; 
 	int value; 
 	
-	public ACards (String name, String suit, int value) {
+	public Practice1 (String name, String suit, int value) {
 		this.name=name;
 		this.suit=suit;
 		this.value=value;		
 	}
 	
-	ACards (String name, String suit) {
+	Practice1 (String name, String suit) {
 		this.name=name;
 		this.suit=suit;
 	}
 	
-	ACards (String suit) {
+	Practice1 (String suit) {
 	this.suit = suit;	
 	}
 	
-	ACards () {}
+	Practice1 () {}
 	
 	void describe() {
 		System.out.println("Name: " + this.name + "\t Suit: " + this.suit + "\t Value: " + value);

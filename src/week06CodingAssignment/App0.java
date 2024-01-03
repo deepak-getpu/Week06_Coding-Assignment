@@ -5,12 +5,12 @@ public class App0 {
 	public static void main(String[] args) {
 	
 		
-		ACards card = new ACards("Five", "Diamond", 5);
+		Practice1 card = new Practice1("Five", "Diamond", 5);
 	
-		ADeck deck = new ADeck ();
+		Practice2 deck = new Practice2 ();
 		deck.describe();
 		
-		ACards deckDraw = deck.draw();
+		Practice1 deckDraw = deck.draw();
 		System.out.println("New Output");
 		deckDraw.describe();
 

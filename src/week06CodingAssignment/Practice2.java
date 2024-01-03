@@ -6,19 +6,19 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ADeck {
+public class Practice2 {
 	
-	List<ACards> cards = new ArrayList <ACards>();
+	List<Practice1> cards = new ArrayList <Practice1>();
 	
 
-	ADeck() {
+	Practice2() {
 		String[] suits = {"Diamond", "Spade", "Heart", "Club"};
 		String[] names = {"Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace"};
 		
 		for (String suit : suits) {
 			int count = 2; 
 			for (String name : names) {
-			ACards card = new ACards(name, suit, count);
+			Practice1 card = new Practice1(name, suit, count);
 			this.cards.add(card);  
 			count++;
 			}
@@ -26,13 +26,13 @@ public class ADeck {
 	}
 	
 	void describe() {
-		for (ACards card: cards) { 
+		for (Practice1 card: cards) { 
 			card.describe();
 		}
 	}
 	
-	ACards draw () {
-		ACards card = this.cards.remove(1);
+	Practice1 draw () {
+		Practice1 card = this.cards.remove(1);
 		return card;
 	}
 	
@@ -42,11 +42,11 @@ public class ADeck {
 	}
 	
 	
-	public List<ACards> getCards() {
+	public List<Practice1> getCards() {
 		return cards;
 	}
 
-	public void setCards(List<ACards> cards) {
+	public void setCards(List<Practice1> cards) {
 		this.cards = cards;
 	}
 
