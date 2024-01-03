@@ -1,6 +1,6 @@
 package week06CodingAssignment;
 
-public class AutomaticDeckNPlayer {
+public class App0 {
 
 	public static void main(String[] args) {
 	
@@ -14,6 +14,7 @@ public class AutomaticDeckNPlayer {
 		System.out.println("New Output");
 		deckDraw.describe();
 
+	
 		
 	
 		
